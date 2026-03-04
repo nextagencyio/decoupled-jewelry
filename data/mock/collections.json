@@ -1,0 +1,126 @@
+{
+  "data": {
+    "nodeCollections": {
+      "__typename": "NodeCollectionConnection",
+      "nodes": [
+        {
+          "__typename": "NodeCollection",
+          "id": "collection-eternal-garden",
+          "title": "Eternal Garden",
+          "path": "/collections/eternal-garden",
+          "body": {
+            "processed": "<p>Inspired by the delicate beauty of nature in bloom, the Eternal Garden collection features intricate floral motifs rendered in 18k gold with precious gemstone accents. Each piece captures the ephemeral beauty of a garden in perpetual spring.</p><p>From hand-carved rose gold petals to vine-wrapped bands set with emeralds and sapphires, this collection celebrates the organic artistry found in nature's finest details.</p>",
+            "summary": "Inspired by the delicate beauty of nature in bloom, the Eternal Garden collection features intricate floral motifs rendered in 18k gold with precious gemstone accents. Each piece captures the ephemera"
+          },
+          "season": "Spring/Summer 2026",
+          "pieceCount": 18,
+          "priceRange": "$1,200 - $12,500",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&q=80",
+            "alt": "Delicate gold jewelry with floral design",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        },
+        {
+          "__typename": "NodeCollection",
+          "id": "collection-midnight-sky",
+          "title": "Midnight Sky",
+          "path": "/collections/midnight-sky",
+          "body": {
+            "processed": "<p>The Midnight Sky collection draws inspiration from the celestial heavens. Sapphires and diamonds are set in platinum to evoke the twinkling beauty of a starlit night. Bold yet elegant, these pieces command attention at any formal occasion.</p><p>Star motifs, crescent moons, and constellation patterns create a sense of wonder and mystique that is uniquely Lumina.</p>",
+            "summary": "The Midnight Sky collection draws inspiration from the celestial heavens. Sapphires and diamonds are set in platinum to evoke the twinkling beauty of a starlit night. Bold yet elegant, these pieces co"
+          },
+          "season": "Fall/Winter 2025",
+          "pieceCount": 14,
+          "priceRange": "$1,950 - $15,000",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1573408301185-9146fe634ad0?w=800&q=80",
+            "alt": "Sapphire and diamond jewelry on dark background",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1573408301185-9146fe634ad0?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1573408301185-9146fe634ad0?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1573408301185-9146fe634ad0?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        },
+        {
+          "__typename": "NodeCollection",
+          "id": "collection-golden-hour",
+          "title": "Golden Hour",
+          "path": "/collections/golden-hour",
+          "body": {
+            "processed": "<p>Warm tones and fluid lines define the Golden Hour collection. Featuring yellow gold and citrine, these pieces capture the magic of sunset light. Perfect for everyday elegance with a touch of glamour.</p><p>This year-round collection includes stackable rings, layering necklaces, and statement earrings designed to mix and match for effortless style.</p>",
+            "summary": "Warm tones and fluid lines define the Golden Hour collection. Featuring yellow gold and citrine, these pieces capture the magic of sunset light. Perfect for everyday elegance with a touch of glamour.T"
+          },
+          "season": "Year-Round",
+          "pieceCount": 22,
+          "priceRange": "$800 - $6,500",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1602173574767-37ac01994b2a?w=800&q=80",
+            "alt": "Gold jewelry in warm light",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1602173574767-37ac01994b2a?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1602173574767-37ac01994b2a?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1602173574767-37ac01994b2a?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

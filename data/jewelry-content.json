@@ -1,0 +1,329 @@
+{
+  "model": [
+    {
+      "bundle": "homepage",
+      "label": "Homepage",
+      "description": "Landing page with hero section, statistics, and call-to-action areas",
+      "fields": [
+        { "id": "hero_title", "label": "Hero Title", "type": "string" },
+        { "id": "hero_subtitle", "label": "Hero Subtitle", "type": "string" },
+        { "id": "hero_description", "label": "Hero Description", "type": "text" },
+        { "id": "stats_items", "label": "Statistics", "type": "paragraph(stat_item)[]" },
+        { "id": "featured_items_title", "label": "Featured Items Title", "type": "string" },
+        { "id": "cta_title", "label": "CTA Title", "type": "string" },
+        { "id": "cta_description", "label": "CTA Description", "type": "text" },
+        { "id": "cta_primary", "label": "Primary CTA", "type": "string" },
+        { "id": "cta_secondary", "label": "Secondary CTA", "type": "string" }
+      ]
+    },
+    {
+      "bundle": "collection",
+      "label": "Collection",
+      "description": "A jewelry collection grouped by theme or season",
+      "body": true,
+      "fields": [
+        { "id": "season", "label": "Season", "type": "string" },
+        { "id": "piece_count", "label": "Number of Pieces", "type": "integer" },
+        { "id": "price_range", "label": "Price Range", "type": "string" },
+        { "id": "image", "label": "Collection Image", "type": "image" }
+      ]
+    },
+    {
+      "bundle": "piece",
+      "label": "Piece",
+      "description": "An individual jewelry piece",
+      "body": true,
+      "fields": [
+        { "id": "collection_name", "label": "Collection Name", "type": "string" },
+        { "id": "price", "label": "Price", "type": "string" },
+        { "id": "material", "label": "Material", "type": "string" },
+        { "id": "gemstone", "label": "Gemstone", "type": "string" },
+        { "id": "piece_type", "label": "Piece Type", "type": "string" },
+        { "id": "image", "label": "Piece Image", "type": "image" }
+      ]
+    },
+    {
+      "bundle": "artisan",
+      "label": "Artisan",
+      "description": "A jewelry artisan or craftsperson",
+      "body": true,
+      "fields": [
+        { "id": "specialty", "label": "Specialty", "type": "string" },
+        { "id": "years_experience", "label": "Years of Experience", "type": "integer" },
+        { "id": "origin", "label": "Training Origin", "type": "string" },
+        { "id": "photo", "label": "Photo", "type": "image" }
+      ]
+    },
+    {
+      "bundle": "page",
+      "label": "Basic Page",
+      "description": "Static content pages for about, contact, policies, etc.",
+      "body": true,
+      "fields": []
+    },
+    {
+      "entity": "paragraph",
+      "bundle": "stat_item",
+      "label": "Statistic Item",
+      "description": "A single statistic with number and label",
+      "fields": [
+        { "id": "number", "label": "Number", "type": "string!" },
+        { "id": "label", "label": "Label", "type": "string!" }
+      ]
+    }
+  ],
+  "content": [
+    {
+      "id": "stat-years",
+      "type": "paragraph.stat_item",
+      "values": { "number": "23", "label": "Years of Excellence" }
+    },
+    {
+      "id": "stat-pieces",
+      "type": "paragraph.stat_item",
+      "values": { "number": "5,000+", "label": "Pieces Crafted" }
+    },
+    {
+      "id": "stat-artisans",
+      "type": "paragraph.stat_item",
+      "values": { "number": "8", "label": "Master Artisans" }
+    },
+    {
+      "id": "stat-collections",
+      "type": "paragraph.stat_item",
+      "values": { "number": "12", "label": "Active Collections" }
+    },
+    {
+      "id": "homepage",
+      "type": "node.homepage",
+      "path": "/homepage",
+      "values": {
+        "title": "Lumina Fine Jewelry",
+        "hero_title": "Brilliance, Redefined",
+        "hero_subtitle": "Fine Jewelry Crafted with Passion Since 2001",
+        "hero_description": "<p>Discover exquisite jewelry that captures light and imagination. Each Lumina piece is a testament to artistry, quality, and the enduring beauty of precious materials, handcrafted by master artisans in our New York atelier.</p>",
+        "stats_items": ["@stat-years", "@stat-pieces", "@stat-artisans", "@stat-collections"],
+        "featured_items_title": "Featured Collections",
+        "cta_title": "Find Your Perfect Piece",
+        "cta_description": "<p>From engagement rings to statement necklaces, explore our collections and discover jewelry that speaks to your unique style. Schedule a private consultation for a personalized experience.</p>",
+        "cta_primary": "Shop Collections",
+        "cta_secondary": "Book Consultation"
+      }
+    },
+    {
+      "id": "collection-eternal-garden",
+      "type": "node.collection",
+      "path": "/collections/eternal-garden",
+      "values": {
+        "title": "Eternal Garden",
+        "body": "<p>Inspired by the delicate beauty of nature in bloom, the Eternal Garden collection features intricate floral motifs rendered in 18k gold with precious gemstone accents. Each piece captures the ephemeral beauty of a garden in perpetual spring.</p><p>From hand-carved rose gold petals to vine-wrapped bands set with emeralds and sapphires, this collection celebrates the organic artistry found in nature's finest details.</p>",
+        "season": "Spring/Summer 2026",
+        "piece_count": 18,
+        "price_range": "$1,200 - $12,500",
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&q=80",
+          "alt": "Delicate gold jewelry with floral design",
+          "title": "Eternal Garden Collection"
+        }
+      }
+    },
+    {
+      "id": "collection-midnight-sky",
+      "type": "node.collection",
+      "path": "/collections/midnight-sky",
+      "values": {
+        "title": "Midnight Sky",
+        "body": "<p>The Midnight Sky collection draws inspiration from the celestial heavens. Sapphires and diamonds are set in platinum to evoke the twinkling beauty of a starlit night. Bold yet elegant, these pieces command attention at any formal occasion.</p><p>Star motifs, crescent moons, and constellation patterns create a sense of wonder and mystique that is uniquely Lumina.</p>",
+        "season": "Fall/Winter 2025",
+        "piece_count": 14,
+        "price_range": "$1,950 - $15,000",
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1573408301185-9146fe634ad0?w=800&q=80",
+          "alt": "Sapphire and diamond jewelry on dark background",
+          "title": "Midnight Sky Collection"
+        }
+      }
+    },
+    {
+      "id": "collection-golden-hour",
+      "type": "node.collection",
+      "path": "/collections/golden-hour",
+      "values": {
+        "title": "Golden Hour",
+        "body": "<p>Warm tones and fluid lines define the Golden Hour collection. Featuring yellow gold and citrine, these pieces capture the magic of sunset light. Perfect for everyday elegance with a touch of glamour.</p><p>This year-round collection includes stackable rings, layering necklaces, and statement earrings designed to mix and match for effortless style.</p>",
+        "season": "Year-Round",
+        "piece_count": 22,
+        "price_range": "$800 - $6,500",
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1602173574767-37ac01994b2a?w=800&q=80",
+          "alt": "Gold jewelry in warm light",
+          "title": "Golden Hour Collection"
+        }
+      }
+    },
+    {
+      "id": "piece-aurora-ring",
+      "type": "node.piece",
+      "path": "/pieces/aurora-engagement-ring",
+      "values": {
+        "title": "Aurora Engagement Ring",
+        "body": "<p>A breathtaking solitaire featuring a 1.5 carat round brilliant diamond set in a delicate platinum band with pave accents. The Aurora ring captures light from every angle, creating a mesmerizing display of fire and brilliance that makes it our most requested engagement ring.</p>",
+        "collection_name": "Eternal Garden",
+        "price": "$8,500",
+        "material": "Platinum",
+        "gemstone": "1.5ct Round Brilliant Diamond",
+        "piece_type": "Ring",
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=800&q=80",
+          "alt": "Diamond engagement ring on white surface",
+          "title": "Aurora Engagement Ring"
+        }
+      }
+    },
+    {
+      "id": "piece-celestial-pendant",
+      "type": "node.piece",
+      "path": "/pieces/celestial-pendant",
+      "values": {
+        "title": "Celestial Pendant Necklace",
+        "body": "<p>A stunning blue sapphire surrounded by a halo of micro-pave diamonds, suspended from a delicate platinum chain. This pendant evokes the mystery of a midnight sky and adds sophistication to any ensemble. The 18-inch chain features an adjustable extension for versatile wear.</p>",
+        "collection_name": "Midnight Sky",
+        "price": "$4,200",
+        "material": "Platinum",
+        "gemstone": "Blue Sapphire, Diamond Halo",
+        "piece_type": "Necklace",
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=800&q=80",
+          "alt": "Sapphire pendant necklace",
+          "title": "Celestial Pendant Necklace"
+        }
+      }
+    },
+    {
+      "id": "piece-soleil-bracelet",
+      "type": "node.piece",
+      "path": "/pieces/soleil-bracelet",
+      "values": {
+        "title": "Soleil Tennis Bracelet",
+        "body": "<p>A classic tennis bracelet reimagined with alternating citrines and diamonds set in warm 18k yellow gold. The Soleil bracelet brings a modern twist to timeless elegance, perfect for both casual and formal occasions. Features a hidden safety clasp for secure wear.</p>",
+        "collection_name": "Golden Hour",
+        "price": "$3,800",
+        "material": "18k Yellow Gold",
+        "gemstone": "Citrine, Diamond",
+        "piece_type": "Bracelet",
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=800&q=80",
+          "alt": "Gold tennis bracelet",
+          "title": "Soleil Tennis Bracelet"
+        }
+      }
+    },
+    {
+      "id": "piece-flora-earrings",
+      "type": "node.piece",
+      "path": "/pieces/flora-drop-earrings",
+      "values": {
+        "title": "Flora Drop Earrings",
+        "body": "<p>Delicate drop earrings featuring hand-carved rose gold petals with emerald centers. These earrings sway gently with movement, creating an enchanting play of light and color inspired by spring blooms. Each petal is individually carved and polished by hand.</p>",
+        "collection_name": "Eternal Garden",
+        "price": "$2,900",
+        "material": "18k Rose Gold",
+        "gemstone": "Emerald",
+        "piece_type": "Earrings",
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=800&q=80",
+          "alt": "Elegant drop earrings",
+          "title": "Flora Drop Earrings"
+        }
+      }
+    },
+    {
+      "id": "piece-luna-cuff",
+      "type": "node.piece",
+      "path": "/pieces/luna-cuff-bracelet",
+      "values": {
+        "title": "Luna Cuff Bracelet",
+        "body": "<p>A bold statement piece featuring a crescent moon motif adorned with moonstones and diamonds. The Luna cuff is handcrafted in sterling silver with a polished finish that catches light beautifully. An adjustable opening allows for a comfortable fit on any wrist.</p>",
+        "collection_name": "Midnight Sky",
+        "price": "$1,950",
+        "material": "Sterling Silver",
+        "gemstone": "Moonstone, Diamond",
+        "piece_type": "Bracelet",
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1573408301185-9146fe634ad0?w=800&q=80",
+          "alt": "Silver cuff bracelet with moonstone",
+          "title": "Luna Cuff Bracelet"
+        }
+      }
+    },
+    {
+      "id": "artisan-isabella",
+      "type": "node.artisan",
+      "path": "/artisans/isabella-santos",
+      "values": {
+        "title": "Isabella Santos",
+        "body": "<p>A third-generation jewelry artisan, Isabella brings decades of family tradition to every piece she creates. Trained at the prestigious Scuola Orafa in Florence, Italy, her work blends classical European techniques with contemporary design sensibilities. She specializes in hand-engraving and filigree work that gives each piece an irreplaceable human touch.</p><p>Isabella's filigree work has been featured in Vogue Italia and the International Jewelry Exhibition in Basel.</p>",
+        "specialty": "Hand Engraving & Filigree",
+        "years_experience": 28,
+        "origin": "Florence, Italy",
+        "photo": {
+          "uri": "https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?w=800&q=80",
+          "alt": "Isabella Santos, master jewelry artisan",
+          "title": "Isabella Santos"
+        }
+      }
+    },
+    {
+      "id": "artisan-james",
+      "type": "node.artisan",
+      "path": "/artisans/james-chen",
+      "values": {
+        "title": "James Chen",
+        "body": "<p>James is our lead stone setter, known for his precision and attention to detail. With a background in mechanical engineering and gemology from GIA, he brings a scientific approach to the art of stone setting, ensuring every gem is securely and beautifully placed.</p><p>His micro-pave work is renowned in the industry for its flawless execution, with settings so precise they appear to float on the metal surface.</p>",
+        "specialty": "Stone Setting & Gemology",
+        "years_experience": 15,
+        "origin": "GIA, Carlsbad, California",
+        "photo": {
+          "uri": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80",
+          "alt": "James Chen, master stone setter",
+          "title": "James Chen"
+        }
+      }
+    },
+    {
+      "id": "artisan-amara",
+      "type": "node.artisan",
+      "path": "/artisans/amara-okafor",
+      "values": {
+        "title": "Amara Okafor",
+        "body": "<p>Amara is our creative director and lead designer, whose bold vision has shaped Lumina's most iconic collections. Drawing inspiration from architecture, nature, and West African art traditions, she creates designs that are both modern and timeless.</p><p>Before founding Lumina's design studio, Amara studied at the Royal College of Art in London and apprenticed with acclaimed jeweler David Yurman.</p>",
+        "specialty": "Design & Creative Direction",
+        "years_experience": 20,
+        "origin": "Royal College of Art, London",
+        "photo": {
+          "uri": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=800&q=80",
+          "alt": "Amara Okafor, creative director",
+          "title": "Amara Okafor"
+        }
+      }
+    },
+    {
+      "id": "about-page",
+      "type": "node.page",
+      "path": "/about",
+      "values": {
+        "title": "About Lumina Fine Jewelry",
+        "body": "<p>Founded in 2001, Lumina Fine Jewelry began with a simple belief: that exceptional jewelry should celebrate true craftsmanship above all else. Our New York atelier brings together master artisans from around the world, each contributing their unique expertise to create pieces of enduring beauty.</p><h2>Our Philosophy</h2><p>We believe that fine jewelry is more than adornment. It marks life's most precious moments, carries stories across generations, and celebrates the artistry of human hands working with nature's most beautiful materials.</p><h2>Sustainability</h2><p>Every Lumina piece is crafted with responsibility. We use only recycled precious metals, conflict-free diamonds, and ethically sourced gemstones. All our diamonds are independently certified by the Gemological Institute of America.</p>"
+      }
+    },
+    {
+      "id": "contact-page",
+      "type": "node.page",
+      "path": "/contact",
+      "values": {
+        "title": "Contact Lumina",
+        "body": "<p>We'd love to help you find or create the perfect piece. Visit our showroom or schedule a private consultation with one of our design experts.</p><h2>Showroom Hours</h2><p>Monday - Saturday: 10:00 AM - 7:00 PM<br/>Sunday: By appointment only</p><h2>Location</h2><p>Lumina Fine Jewelry<br/>500 Fifth Avenue, Suite 2200<br/>New York, NY 10110</p><h2>Contact</h2><p>Phone: (212) 555-0198<br/>Email: concierge@luminajewelry.com</p>"
+      }
+    }
+  ]
+}

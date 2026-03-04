@@ -1,0 +1,214 @@
+{
+  "data": {
+    "nodePieces": {
+      "__typename": "NodePieceConnection",
+      "nodes": [
+        {
+          "__typename": "NodePiece",
+          "id": "piece-aurora-ring",
+          "title": "Aurora Engagement Ring",
+          "path": "/pieces/aurora-engagement-ring",
+          "body": {
+            "processed": "<p>A breathtaking solitaire featuring a 1.5 carat round brilliant diamond set in a delicate platinum band with pave accents. The Aurora ring captures light from every angle, creating a mesmerizing display of fire and brilliance that makes it our most requested engagement ring.</p>",
+            "summary": "A breathtaking solitaire featuring a 1.5 carat round brilliant diamond set in a delicate platinum band with pave accents. The Aurora ring captures light from every angle, creating a mesmerizing displa"
+          },
+          "collectionName": "Eternal Garden",
+          "price": "$8,500",
+          "material": "Platinum",
+          "gemstone": "1.5ct Round Brilliant Diamond",
+          "pieceType": "Ring",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=800&q=80",
+            "alt": "Diamond engagement ring on white surface",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        },
+        {
+          "__typename": "NodePiece",
+          "id": "piece-celestial-pendant",
+          "title": "Celestial Pendant Necklace",
+          "path": "/pieces/celestial-pendant",
+          "body": {
+            "processed": "<p>A stunning blue sapphire surrounded by a halo of micro-pave diamonds, suspended from a delicate platinum chain. This pendant evokes the mystery of a midnight sky and adds sophistication to any ensemble. The 18-inch chain features an adjustable extension for versatile wear.</p>",
+            "summary": "A stunning blue sapphire surrounded by a halo of micro-pave diamonds, suspended from a delicate platinum chain. This pendant evokes the mystery of a midnight sky and adds sophistication to any ensembl"
+          },
+          "collectionName": "Midnight Sky",
+          "price": "$4,200",
+          "material": "Platinum",
+          "gemstone": "Blue Sapphire, Diamond Halo",
+          "pieceType": "Necklace",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=800&q=80",
+            "alt": "Sapphire pendant necklace",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        },
+        {
+          "__typename": "NodePiece",
+          "id": "piece-soleil-bracelet",
+          "title": "Soleil Tennis Bracelet",
+          "path": "/pieces/soleil-bracelet",
+          "body": {
+            "processed": "<p>A classic tennis bracelet reimagined with alternating citrines and diamonds set in warm 18k yellow gold. The Soleil bracelet brings a modern twist to timeless elegance, perfect for both casual and formal occasions. Features a hidden safety clasp for secure wear.</p>",
+            "summary": "A classic tennis bracelet reimagined with alternating citrines and diamonds set in warm 18k yellow gold. The Soleil bracelet brings a modern twist to timeless elegance, perfect for both casual and for"
+          },
+          "collectionName": "Golden Hour",
+          "price": "$3,800",
+          "material": "18k Yellow Gold",
+          "gemstone": "Citrine, Diamond",
+          "pieceType": "Bracelet",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=800&q=80",
+            "alt": "Gold tennis bracelet",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        },
+        {
+          "__typename": "NodePiece",
+          "id": "piece-flora-earrings",
+          "title": "Flora Drop Earrings",
+          "path": "/pieces/flora-drop-earrings",
+          "body": {
+            "processed": "<p>Delicate drop earrings featuring hand-carved rose gold petals with emerald centers. These earrings sway gently with movement, creating an enchanting play of light and color inspired by spring blooms. Each petal is individually carved and polished by hand.</p>",
+            "summary": "Delicate drop earrings featuring hand-carved rose gold petals with emerald centers. These earrings sway gently with movement, creating an enchanting play of light and color inspired by spring blooms. "
+          },
+          "collectionName": "Eternal Garden",
+          "price": "$2,900",
+          "material": "18k Rose Gold",
+          "gemstone": "Emerald",
+          "pieceType": "Earrings",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=800&q=80",
+            "alt": "Elegant drop earrings",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        },
+        {
+          "__typename": "NodePiece",
+          "id": "piece-luna-cuff",
+          "title": "Luna Cuff Bracelet",
+          "path": "/pieces/luna-cuff-bracelet",
+          "body": {
+            "processed": "<p>A bold statement piece featuring a crescent moon motif adorned with moonstones and diamonds. The Luna cuff is handcrafted in sterling silver with a polished finish that catches light beautifully. An adjustable opening allows for a comfortable fit on any wrist.</p>",
+            "summary": "A bold statement piece featuring a crescent moon motif adorned with moonstones and diamonds. The Luna cuff is handcrafted in sterling silver with a polished finish that catches light beautifully. An a"
+          },
+          "collectionName": "Midnight Sky",
+          "price": "$1,950",
+          "material": "Sterling Silver",
+          "gemstone": "Moonstone, Diamond",
+          "pieceType": "Bracelet",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1573408301185-9146fe634ad0?w=800&q=80",
+            "alt": "Silver cuff bracelet with moonstone",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1573408301185-9146fe634ad0?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1573408301185-9146fe634ad0?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1573408301185-9146fe634ad0?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

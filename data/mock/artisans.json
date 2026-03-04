@@ -1,0 +1,126 @@
+{
+  "data": {
+    "nodeArtisans": {
+      "__typename": "NodeArtisanConnection",
+      "nodes": [
+        {
+          "__typename": "NodeArtisan",
+          "id": "artisan-isabella",
+          "title": "Isabella Santos",
+          "path": "/artisans/isabella-santos",
+          "body": {
+            "processed": "<p>A third-generation jewelry artisan, Isabella brings decades of family tradition to every piece she creates. Trained at the prestigious Scuola Orafa in Florence, Italy, her work blends classical European techniques with contemporary design sensibilities. She specializes in hand-engraving and filigree work that gives each piece an irreplaceable human touch.</p><p>Isabella's filigree work has been featured in Vogue Italia and the International Jewelry Exhibition in Basel.</p>",
+            "summary": "A third-generation jewelry artisan, Isabella brings decades of family tradition to every piece she creates. Trained at the prestigious Scuola Orafa in Florence, Italy, her work blends classical Europe"
+          },
+          "specialty": "Hand Engraving & Filigree",
+          "yearsExperience": 28,
+          "origin": "Florence, Italy",
+          "photo": {
+            "url": "https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?w=800&q=80",
+            "alt": "Isabella Santos, master jewelry artisan",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        },
+        {
+          "__typename": "NodeArtisan",
+          "id": "artisan-james",
+          "title": "James Chen",
+          "path": "/artisans/james-chen",
+          "body": {
+            "processed": "<p>James is our lead stone setter, known for his precision and attention to detail. With a background in mechanical engineering and gemology from GIA, he brings a scientific approach to the art of stone setting, ensuring every gem is securely and beautifully placed.</p><p>His micro-pave work is renowned in the industry for its flawless execution, with settings so precise they appear to float on the metal surface.</p>",
+            "summary": "James is our lead stone setter, known for his precision and attention to detail. With a background in mechanical engineering and gemology from GIA, he brings a scientific approach to the art of stone "
+          },
+          "specialty": "Stone Setting & Gemology",
+          "yearsExperience": 15,
+          "origin": "GIA, Carlsbad, California",
+          "photo": {
+            "url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80",
+            "alt": "James Chen, master stone setter",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        },
+        {
+          "__typename": "NodeArtisan",
+          "id": "artisan-amara",
+          "title": "Amara Okafor",
+          "path": "/artisans/amara-okafor",
+          "body": {
+            "processed": "<p>Amara is our creative director and lead designer, whose bold vision has shaped Lumina's most iconic collections. Drawing inspiration from architecture, nature, and West African art traditions, she creates designs that are both modern and timeless.</p><p>Before founding Lumina's design studio, Amara studied at the Royal College of Art in London and apprenticed with acclaimed jeweler David Yurman.</p>",
+            "summary": "Amara is our creative director and lead designer, whose bold vision has shaped Lumina's most iconic collections. Drawing inspiration from architecture, nature, and West African art traditions, she cre"
+          },
+          "specialty": "Design & Creative Direction",
+          "yearsExperience": 20,
+          "origin": "Royal College of Art, London",
+          "photo": {
+            "url": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=800&q=80",
+            "alt": "Amara Okafor, creative director",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

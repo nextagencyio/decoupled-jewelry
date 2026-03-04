@@ -1,0 +1,59 @@
+{
+  "data": {
+    "nodeHomepages": {
+      "__typename": "NodeHomepageConnection",
+      "nodes": [
+        {
+          "__typename": "NodeHomepage",
+          "id": "homepage",
+          "title": "Lumina Fine Jewelry",
+          "path": "/homepage",
+          "heroTitle": "Brilliance, Redefined",
+          "heroSubtitle": "Fine Jewelry Crafted with Passion Since 2001",
+          "heroDescription": {
+            "processed": "<p>Discover exquisite jewelry that captures light and imagination. Each Lumina piece is a testament to artistry, quality, and the enduring beauty of precious materials, handcrafted by master artisans in our New York atelier.</p>",
+            "summary": "Discover exquisite jewelry that captures light and imagination. Each Lumina piece is a testament to artistry, quality, and the enduring beauty of precious materials, handcrafted by master artisans in "
+          },
+          "statsItems": [
+            {
+              "__typename": "ParagraphStatItem",
+              "id": "stat-years",
+              "title": "",
+              "number": "23",
+              "label": "Years of Excellence"
+            },
+            {
+              "__typename": "ParagraphStatItem",
+              "id": "stat-pieces",
+              "title": "",
+              "number": "5,000+",
+              "label": "Pieces Crafted"
+            },
+            {
+              "__typename": "ParagraphStatItem",
+              "id": "stat-artisans",
+              "title": "",
+              "number": "8",
+              "label": "Master Artisans"
+            },
+            {
+              "__typename": "ParagraphStatItem",
+              "id": "stat-collections",
+              "title": "",
+              "number": "12",
+              "label": "Active Collections"
+            }
+          ],
+          "featuredItemsTitle": "Featured Collections",
+          "ctaTitle": "Find Your Perfect Piece",
+          "ctaDescription": {
+            "processed": "<p>From engagement rings to statement necklaces, explore our collections and discover jewelry that speaks to your unique style. Schedule a private consultation for a personalized experience.</p>",
+            "summary": "From engagement rings to statement necklaces, explore our collections and discover jewelry that speaks to your unique style. Schedule a private consultation for a personalized experience."
+          },
+          "ctaPrimary": "Shop Collections",
+          "ctaSecondary": "Book Consultation"
+        }
+      ]
+    }
+  }
+}
