@@ -19,28 +19,28 @@
               "__typename": "ParagraphStatItem",
               "id": "stat-years",
               "title": "",
-              "number": "23",
+              "number": "23", "value": "23",
               "label": "Years of Excellence"
             },
             {
               "__typename": "ParagraphStatItem",
               "id": "stat-pieces",
               "title": "",
-              "number": "5,000+",
+              "number": "5,000+", "value": "5,000+",
               "label": "Pieces Crafted"
             },
             {
               "__typename": "ParagraphStatItem",
               "id": "stat-artisans",
               "title": "",
-              "number": "8",
+              "number": "8", "value": "8",
               "label": "Master Artisans"
             },
             {
               "__typename": "ParagraphStatItem",
               "id": "stat-collections",
               "title": "",
-              "number": "12",
+              "number": "12", "value": "12",
               "label": "Active Collections"
             }
           ],
