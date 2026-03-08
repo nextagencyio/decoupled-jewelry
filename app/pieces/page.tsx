@@ -7,6 +7,7 @@ import Header from '../components/Header'
 import PieceCard from '../components/PieceCard'
 
 export const revalidate = 3600
+export const dynamic = 'force-dynamic'
 
 export const metadata: Metadata = {
   title: 'Pieces | Lumina Fine Jewelry',
