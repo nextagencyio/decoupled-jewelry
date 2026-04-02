@@ -24,7 +24,7 @@ interface PieceByPathData {
 async function getPiece(path: string): Promise<DrupalPiece | null> {
   try {
     const client = getClient()
-    const { data } = await client.raw(GET_PIECE_BY_PATH, { path })
+    const data = await client.raw(GET_PIECE_BY_PATH, { path })
     return data?.route?.entity || null
   } catch (error) {
     console.error('Error fetching piece:', error)
