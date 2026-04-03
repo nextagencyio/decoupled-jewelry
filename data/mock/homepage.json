@@ -11,44 +11,55 @@
           "heroTitle": "Brilliance, Redefined",
           "heroSubtitle": "Fine Jewelry Crafted with Passion Since 2001",
           "heroDescription": {
-            "processed": "<p>Discover exquisite jewelry that captures light and imagination. Each Lumina piece is a testament to artistry, quality, and the enduring beauty of precious materials, handcrafted by master artisans in our New York atelier.</p>",
-            "summary": "Discover exquisite jewelry that captures light and imagination. Each Lumina piece is a testament to artistry, quality, and the enduring beauty of precious materials, handcrafted by master artisans in "
+            "processed": "<p>Discover exquisite jewelry that captures light and imagination. Each Lumina piece is a testament to artistry, quality, and the enduring beauty of precious materials, handcrafted by master artisans in our New York atelier.</p>"
           },
-          "statsItems": [
+          "featuresItems": [
             {
-              "__typename": "ParagraphStatItem",
-              "id": "stat-years",
-              "title": "",
-              "number": "23", "value": "23",
-              "label": "Years of Excellence"
+              "__typename": "ParagraphFeatureItem",
+              "id": "feature-handcrafted",
+              "icon": "Gem",
+              "title": "Handcrafted Excellence",
+              "description": { "processed": "<p>Each piece is meticulously handcrafted by master artisans with decades of experience.</p>" }
             },
             {
-              "__typename": "ParagraphStatItem",
-              "id": "stat-pieces",
-              "title": "",
-              "number": "5,000+", "value": "5,000+",
-              "label": "Pieces Crafted"
+              "__typename": "ParagraphFeatureItem",
+              "id": "feature-ethic",
+              "icon": "Shield",
+              "title": "Ethically Sourced",
+              "description": { "processed": "<p>We source only conflict-free diamonds and responsibly mined gemstones.</p>" }
             },
             {
-              "__typename": "ParagraphStatItem",
-              "id": "stat-artisans",
-              "title": "",
-              "number": "8", "value": "8",
-              "label": "Master Artisans"
+              "__typename": "ParagraphFeatureItem",
+              "id": "feature-custom",
+              "icon": "Palette",
+              "title": "Custom Designs",
+              "description": { "processed": "<p>Work with our designers to create a one-of-a-kind piece that tells your story.</p>" }
             },
             {
-              "__typename": "ParagraphStatItem",
-              "id": "stat-collections",
-              "title": "",
-              "number": "12", "value": "12",
-              "label": "Active Collections"
+              "__typename": "ParagraphFeatureItem",
+              "id": "feature-warranty",
+              "icon": "Award",
+              "title": "Lifetime Warranty",
+              "description": { "processed": "<p>Every Lumina piece comes with our comprehensive lifetime warranty and care program.</p>" }
+            },
+            {
+              "__typename": "ParagraphFeatureItem",
+              "id": "feature-cert",
+              "icon": "CheckCircle",
+              "title": "GIA Certified",
+              "description": { "processed": "<p>All diamonds are GIA certified, ensuring quality and authenticity.</p>" }
+            },
+            {
+              "__typename": "ParagraphFeatureItem",
+              "id": "feature-gift",
+              "icon": "Gift",
+              "title": "Luxury Packaging",
+              "description": { "processed": "<p>Every piece arrives in our signature luxury packaging, ready to gift.</p>" }
             }
           ],
-          "featuredItemsTitle": "Featured Collections",
           "ctaTitle": "Find Your Perfect Piece",
           "ctaDescription": {
-            "processed": "<p>From engagement rings to statement necklaces, explore our collections and discover jewelry that speaks to your unique style. Schedule a private consultation for a personalized experience.</p>",
-            "summary": "From engagement rings to statement necklaces, explore our collections and discover jewelry that speaks to your unique style. Schedule a private consultation for a personalized experience."
+            "processed": "<p>From engagement rings to statement necklaces, explore our collections and discover jewelry that speaks to your unique style. Schedule a private consultation for a personalized experience.</p>"
           },
           "ctaPrimary": "Shop Collections",
           "ctaSecondary": "Book Consultation"

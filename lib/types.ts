@@ -1,14 +1,20 @@
+export interface DrupalFeatureItem {
+  id: string
+  icon?: string
+  title?: string
+  description?: { processed: string }
+}
+
 export interface DrupalHomepage {
   id: string
   title: string
   path?: string
   heroTitle?: string
   heroSubtitle?: string
-  heroDescription?: { processed: string; summary?: string }
-  statsItems?: string
-  featuredItemsTitle?: string
+  heroDescription?: { processed: string }
+  featuresItems?: DrupalFeatureItem[]
   ctaTitle?: string
-  ctaDescription?: { processed: string; summary?: string }
+  ctaDescription?: { processed: string }
   ctaPrimary?: string
   ctaSecondary?: string
 }
@@ -17,7 +23,7 @@ export interface DrupalPage {
   id: string
   title: string
   path?: string
-
+  body?: { processed: string; summary?: string }
 }
 
 export interface DrupalCollection {
@@ -25,8 +31,7 @@ export interface DrupalCollection {
   title: string
   path?: string
   season?: string
-  pieceCount?: number
-  priceRange?: string
+  body?: { processed: string; summary?: string }
   image?: { url: string; alt: string; width?: number; height?: number; variations?: { name: string; url: string; width: number; height: number }[] }
 }
 
@@ -37,8 +42,7 @@ export interface DrupalPiece {
   collectionName?: string
   price?: string
   material?: string
-  gemstone?: string
-  pieceType?: string
+  body?: { processed: string; summary?: string }
   image?: { url: string; alt: string; width?: number; height?: number; variations?: { name: string; url: string; width: number; height: number }[] }
 }
 
@@ -48,7 +52,7 @@ export interface DrupalArtisan {
   path?: string
   specialty?: string
   yearsExperience?: number
-  origin?: string
+  body?: { processed: string; summary?: string }
   photo?: { url: string; alt: string; width?: number; height?: number; variations?: { name: string; url: string; width: number; height: number }[] }
 }
 

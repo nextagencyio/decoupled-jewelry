@@ -7,15 +7,21 @@ export const GET_HOMEPAGE_DATA = gql`
       nodes {
         id
         title
-      heroTitle
-      heroSubtitle
-      heroDescription { processed summary }
-      statsItems
-      featuredItemsTitle
-      ctaTitle
-      ctaDescription { processed summary }
-      ctaPrimary
-      ctaSecondary
+        heroTitle
+        heroSubtitle
+        heroDescription { processed }
+        featuresItems {
+          ... on ParagraphFeatureItem {
+            id
+            icon
+            title
+            description { processed }
+          }
+        }
+        ctaTitle
+        ctaDescription { processed }
+        ctaPrimary
+        ctaSecondary
       }
     }
   }
@@ -28,13 +34,9 @@ export const GET_COLLECTIONS = gql`
         id
         title
         path
-        created { timestamp }
-        ... on NodeCollection {
-          season
-          pieceCount
-          priceRange
-          image { url alt width height variations(styles: [LARGE, MEDIUM, THUMBNAIL]) { name url width height } }
-        }
+        season
+        body { processed summary }
+        image { url alt width height variations(styles: [LARGE, MEDIUM, THUMBNAIL]) { name url width height } }
       }
     }
   }
@@ -49,10 +51,9 @@ export const GET_COLLECTION_BY_PATH = gql`
             id
             title
             path
-          season
-          pieceCount
-          priceRange
-          image { url alt width height variations(styles: [LARGE, MEDIUM, THUMBNAIL]) { name url width height } }
+            season
+            body { processed summary }
+            image { url alt width height variations(styles: [LARGE, MEDIUM, THUMBNAIL]) { name url width height } }
           }
         }
       }
@@ -67,15 +68,11 @@ export const GET_PIECES = gql`
         id
         title
         path
-        created { timestamp }
-        ... on NodePiece {
-          collectionName
-          price
-          material
-          gemstone
-          pieceType
-          image { url alt width height variations(styles: [LARGE, MEDIUM, THUMBNAIL]) { name url width height } }
-        }
+        collectionName
+        price
+        material
+        body { processed summary }
+        image { url alt width height variations(styles: [LARGE, MEDIUM, THUMBNAIL]) { name url width height } }
       }
     }
   }
@@ -90,12 +87,11 @@ export const GET_PIECE_BY_PATH = gql`
             id
             title
             path
-          collectionName
-          price
-          material
-          gemstone
-          pieceType
-          image { url alt width height variations(styles: [LARGE, MEDIUM, THUMBNAIL]) { name url width height } }
+            collectionName
+            price
+            material
+            body { processed summary }
+            image { url alt width height variations(styles: [LARGE, MEDIUM, THUMBNAIL]) { name url width height } }
           }
         }
       }
@@ -110,13 +106,10 @@ export const GET_ARTISANS = gql`
         id
         title
         path
-        created { timestamp }
-        ... on NodeArtisan {
-          specialty
-          yearsExperience
-          origin
-          photo { url alt width height variations(styles: [LARGE, MEDIUM, THUMBNAIL]) { name url width height } }
-        }
+        specialty
+        yearsExperience
+        body { processed summary }
+        photo { url alt width height variations(styles: [LARGE, MEDIUM, THUMBNAIL]) { name url width height } }
       }
     }
   }
@@ -131,10 +124,10 @@ export const GET_ARTISAN_BY_PATH = gql`
             id
             title
             path
-          specialty
-          yearsExperience
-          origin
-          photo { url alt width height variations(styles: [LARGE, MEDIUM, THUMBNAIL]) { name url width height } }
+            specialty
+            yearsExperience
+            body { processed summary }
+            photo { url alt width height variations(styles: [LARGE, MEDIUM, THUMBNAIL]) { name url width height } }
           }
         }
       }

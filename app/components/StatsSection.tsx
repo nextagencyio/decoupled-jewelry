@@ -7,17 +7,22 @@ interface StatsSectionProps {
 }
 
 export default function StatsSection({ homepageContent }: StatsSectionProps) {
-  const stats = (homepageContent as any)?.stats || (homepageContent as any)?.statsItems || []
-  if (!stats || stats.length === 0) return null
+  const features = homepageContent?.featuresItems || []
+  if (!features || features.length === 0) return null
 
   return (
     <section className="py-20 bg-slate-950">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col md:flex-row items-center justify-center md:divide-x md:divide-slate-700">
-          {stats.map((stat: any, i: number) => (
-            <div key={stat.id || i} className="text-center px-8 md:px-12 py-6 md:py-0">
-              <div className="font-display text-4xl md:text-5xl font-light text-accent-400 mb-2">{stat.value || stat.number || stat.statValue}</div>
-              <div className="text-sm text-gray-400 uppercase tracking-widest font-medium">{stat.label || stat.statLabel || stat.title}</div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {features.map((feature: any, i: number) => (
+            <div key={feature.id || i} className="text-center px-6 py-8 border border-slate-800 rounded-lg">
+              {feature.icon && (
+                <div className="text-3xl mb-4 text-accent-400">{feature.icon}</div>
+              )}
+              <div className="text-lg font-semibold text-white mb-2">{feature.title}</div>
+              {feature.description?.processed && (
+                <div className="text-sm text-slate-400" dangerouslySetInnerHTML={{ __html: feature.description.processed }} />
+              )}
             </div>
           ))}
         </div>
